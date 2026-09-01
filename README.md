@@ -29,9 +29,14 @@ rostopic list
 * Note the pointcloud semantic_mapper/cloud
 ```
 rosrun rviz rviz  
-```  
+```
+If you want to train the network with your own data
+Execute "train.py" 
+The code trained from scratch will be gradually released in the subsequent stages
+
+
 ## Localization in a pointcloud map(pcd)
-![](cfgs/sample_img3.png)
+
 
 
 This operation will send a init pose to topic `/initialpose`.
