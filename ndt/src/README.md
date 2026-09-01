@@ -159,5 +159,3 @@ transforms:
 ```
 
 
-### Want to know more detail?
-You can follow my blog series in CSDN (Chinese): https://blog.csdn.net/adamshan
