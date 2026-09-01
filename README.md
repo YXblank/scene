@@ -1,6 +1,7 @@
 # ros-semantic-scene-recognition
 
-
+Python > 3.6
+Ubuntu > 18.04
 
 # How to use:
 
