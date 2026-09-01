@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_base_link" args="0 0 0 0 0 0 base_footprint base_link"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="localizer_to_base_link" args="0 0 0 0 0 0 base_footprint camera_link"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="camera_to_depth_link" args="0 -0.02 0 -1.57 0 -1.57 camera_link camera_depth_optical_frame"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="camera_depth_to_rgb_link" args="0 -0.045 0 -1.57 0 -1.57 camera_link camera_rgb_optical_frame"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="world_to_map" args="0 0 0 0 0 0 map world" /> 
+</launch>
