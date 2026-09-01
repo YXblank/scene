@@ -1,4 +1,4 @@
-# ros-semantic-mapper
+# ros-semantic-scene-recognition
 
 
 
