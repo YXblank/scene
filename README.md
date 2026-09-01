@@ -30,3 +30,64 @@ rostopic list
 ```
 rosrun rviz rviz  
 ```  
+## Localization in a pointcloud map(pcd)
+![](cfgs/sample_img3.png)
+
+
+This operation will send a init pose to topic `/initialpose`.
+
+play the rosbag:
+
+```bash
+rosbag play KAIST02-small.bag --clock
+```
+
+
+
+The final localization msg will send to `/ndt_pose` topic:
+
+```proto
+---
+header: 
+  seq: 1867
+  stamp: 
+    secs: 1566536121
+    nsecs: 251423898
+  frame_id: "map"
+pose: 
+  position: 
+    x: -94.8022766113
+    y: 544.097351074
+    z: 42.5747337341
+  orientation: 
+    x: 0.0243843578881
+    y: 0.0533175268768
+    z: -0.702325920272
+    w: 0.709437048124
+---
+```
+
+The localizer also publish a tf of `base_link` to `map`:
+
+```
+---
+transforms: 
+  - 
+    header: 
+      seq: 0
+      stamp: 
+        secs: 1566536121
+        nsecs: 251423898
+      frame_id: "map"
+    child_frame_id: "base_link"
+    transform: 
+      translation: 
+        x: -94.8022766113
+        y: 544.097351074
+        z: 42.5747337341
+      rotation: 
+        x: 0.0243843578881
+        y: 0.0533175268768
+        z: -0.702325920272
+        w: 0.709437048124
+```
