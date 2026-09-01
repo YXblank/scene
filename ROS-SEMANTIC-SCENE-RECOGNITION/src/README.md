@@ -6,7 +6,7 @@
 
 * First clone the repository from the link in catkin workspace
 ```
-git clone https://github.com/fdayoub/ros-semantic-mapper.git
+git clone ros-semantic-mapper.git
 ```
 * Run setup file which contains necessary steps to download model files and configure paths
 ```
