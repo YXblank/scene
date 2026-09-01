@@ -2,6 +2,7 @@
 
 Python > 3.6
 Ubuntu > 18.04
+All dependencies are detailed in the instructions inside the folder
 
 # How to use:
 
